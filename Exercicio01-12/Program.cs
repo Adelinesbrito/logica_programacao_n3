@@ -4,6 +4,11 @@
 //    Exiba o resultado.
 
 //Console.WriteLine("Insira uma temperatura uma temperatura em graus Celsius");
+
+
+
+
+
 //--------------------------------------------------------------------------------//
 //02.Operações Matemáticas->Fácil
 //    Solicite dois números inteiros ao usuário.
@@ -140,6 +145,28 @@
 //Console.WriteLine(contador);
 //-----------------------------------------------------------------//
 
+//////07.Contagem de Vogais -> Difícil
+//////    Peça ao usuário para digitar uma palavra.
+//////    Use um laço de repetição para percorrer cada letra.
+//////    Conte quantas vogais (a, e, i, o, u) existem na palavra.
+//////    Exiba o total de vogais encontradas.
+
+//Console.WriteLine(" Escreva uma palavra:");
+//string palavra = Console.ReadLine().ToLower();
+//int totalVogais = 0;
+
+//for (int i = 0; i < palavra.Length; i++)
+//{
+//    char letra = palavra[i];
+
+//    if (letra == 'a' || letra == 'e' || letra == 'i' || letra == 'o' || letra == 'u')
+//    {
+//        totalVogais++;
+//    }
+//}
+//Console.WriteLine(totalVogais);
+
+//-----------------------------------------------------------------//
 
 //08.Lista Simples(Array)->Médio
 //    Crie um programa que armazene 5 nomes em um array.
@@ -159,3 +186,76 @@
 //{
 ////    Console.WriteLine(nomes[i]);
 //}
+//09.Lista com Inteiros -> Médio
+//    Crie uma lista de números inteiros.
+//    Peça ao usuário para digitar 5 números e armazene-os na lista.
+//    Exiba o maior e o menor número digitado.
+
+//List<int> numeros = new List<int>();
+
+//for (int i = 0; i < 5; i++)
+//{
+//    Console.WriteLine("Insira um numero inteiro:");
+//    int numero = int.Parse(Console.ReadLine());
+//    numeros.Add(numero);
+//}
+
+//int maior = 0;
+//int menor  = 0;
+
+//for (int i = 0; i < numeros.Count; i++)
+//{
+//    if (numeros[i] > maior)
+//    {
+//        maior = numeros[i];
+//    }
+//    if (numeros[i] < menor)
+//    {
+//        menor = numeros[i];
+//    }
+//}
+//Console.WriteLine("O menor numero é:"+ menor);
+//Console.WriteLine("O maior numero é:" + maior);
+
+//10.Média de Notas -> Médio
+//    Solicite ao usuário 4 notas (armazenadas em uma lista).
+//    Calcule a média.
+//    Use if/else para informar se o aluno está aprovado (média ≥ 7) ou reprovado.
+
+//List<double> notas = new List<double>();
+
+//for (int i = 0; i  < 4 ; i++)
+//{
+//    Console.WriteLine(" Insira sua nota da prova" + (i + 1) + ":");
+//    notas.Add(double.Parse(Console.ReadLine()));
+//}
+
+//double somaNotas = 0;
+
+//for (int i = 0;i < notas.Count ; i++)
+//{
+//    somaNotas += notas[i];
+
+//}
+
+//double media  =  somaNotas / notas.Count;
+
+//if (media >= 7)
+//{
+//    Console.WriteLine("Aprovado");
+
+//}
+//else
+//{
+//    Console.WriteLine("Reprovado");
+//}
+int nota = 7;
+if (nota >= 9)
+    Console.WriteLine("Excelente");
+else if (nota >= 7)
+    Console.WriteLine("Bom");
+else
+    
+ Console.WriteLine("Precisa melhorar");
+
+
